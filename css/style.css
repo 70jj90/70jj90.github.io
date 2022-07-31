@@ -36,7 +36,8 @@ a {
 
 /* Canvas - Navigation */
 #navigation li {
-    display: inline;    
+    display: inline;
+    margin: 7px;
 }
 
 #navigation {
@@ -99,7 +100,8 @@ a {
 
 /* Footer - Navigation */
 #navigation_footer li {
-    display: inline;    
+    display: inline;
+    margin: 7px;
 }
 
 #navigation_footer {
