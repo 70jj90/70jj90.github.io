@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title> "phase feedback" - [spd01]</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+        <link rel="stylesheet" type="text/css" href="../css/phase_feedback_spd01_style.css" />
+        <link rel="icon" href="../works/welcome_cycle_00_omotpopo.gif" />
+    </head>
+    <body>
+        <div id="canvas">
+            <div id="header">
+                <h1>"phase feedback" - [spd01]</h1>
+                <p>7/May/2022</p>
+                <p>Pure Data patch // noise generator</p>
+            </div>
+            <div id="navigation">
+                <ul>
+                     <li><a href="../index.html">Home</a></li>
+                     <li><a href="../archive.html">Archive</a></li>
+                     <li><a href="./3tr3.html">Previous</a></li>
+                     <li><a href="./te_1_000.html">Next</a></li>
+                </ul>
+
+            </div>
+            <div id="works">                
+
+                
+                <img src="../works/phase_feedback_spd01/phase_feedback_spd01.gif" alt="phase_feedback_spd01"/>
+
+                <div id="p_c_tarolo">
+                    <h3>txt (code) format:</h3>
+
+                    <code>
+                        #N canvas -9 -9 1920 976 12;
+                        #X obj 161 263 phasor~;
+                        #X obj 239 331 +~;
+                        #X obj 238 366 cos~;
+                        #X msg 144 95 \; pd dsp 1;
+                        #X msg 72 96 \; pd dsp 0;
+                        #X obj 239 412 delwrite~ 0$-del_fb 1000;
+                        #X obj 288 161 delread4~ 0$-del_fb;
+                        #X obj 281 271 *~;
+                        #X floatatom 288 71 5 0 1000 0 Delay - -;
+                        #X obj 288 94 pack 0 1000;
+                        #X obj 288 118 line~;
+                        #X floatatom 162 222 5 0 0 0 _Osc._Freq. - -;
+                        #X obj 171 460 clip~ -1 1;
+                        #X obj 171 582 *~;
+                        #X obj 138 739 dac~;
+                        #X floatatom 294 464 5 0 1 0 amp. - -;
+                        #X obj 294 511 line~;
+                        #X obj 294 487 pack 0 50;
+                        #X floatatom 518 147 5 0 1 0 Feedback - -;
+                        #X obj 518 194 line~;
+                        #X obj 518 170 pack 0 50;
+                        #X text 70 50 DSP;
+                        #X text 69 72 off;
+                        #X text 151 71 on;
+                        #X obj 519 76 loadbang;
+                        #X msg 519 100 0.21;
+                        #X text 566 147 0.-1.;
+                        #X text 329 73 0 - 1000;
+                        #X text 204 226 Hz;
+                        #X text 336 460 0.-1.;
+                        #X text 49 35 1;
+                        #X text 270 441 2;
+                        #X text 133 202 3;
+                        #X text 501 127 4;
+                        #X text 271 47 5;
+                        #X obj 167 148 loadbang;
+                        #X msg 167 172 100;
+                        #X obj 416 669 writesf~ 2;
+                        #X msg 598 589 stop;
+                        #X msg 522 594 start;
+                        #X text 380 568 Recorder;
+                        #X msg 386 593 open hello.wav;
+                        #X text 363 592 1;
+                        #X text 505 594 2;
+                        #X text 576 591 3;
+                        #X text 67 862 Created by omotopopo 2022 // https://cyclecyclecycle.neocities.org/index.html
+                        ;
+                        #X text 38 8 Phase feedback;
+                        #X connect 0 0 1 0;
+                        #X connect 1 0 2 0;
+                        #X connect 2 0 5 0;
+                        #X connect 2 0 12 0;
+                        #X connect 6 0 7 0;
+                        #X connect 7 0 1 1;
+                        #X connect 8 0 9 0;
+                        #X connect 9 0 10 0;
+                        #X connect 10 0 6 0;
+                        #X connect 11 0 0 0;
+                        #X connect 12 0 13 0;
+                        #X connect 13 0 14 0;
+                        #X connect 13 0 14 1;
+                        #X connect 13 0 37 0;
+                        #X connect 13 0 37 1;
+                        #X connect 15 0 17 0;
+                        #X connect 16 0 13 1;
+                        #X connect 17 0 16 0;
+                        #X connect 18 0 20 0;
+                        #X connect 19 0 7 1;
+                        #X connect 20 0 19 0;
+                        #X connect 24 0 25 0;
+                        #X connect 25 0 18 0;
+                        #X connect 35 0 36 0;
+                        #X connect 36 0 11 0;
+                        #X connect 38 0 37 0;
+                        #X connect 39 0 37 0;
+                        #X connect 41 0 37 0;
+                        
+                      
+                    </code>
+
+                </div>
+
+                
+
+                <div id="l_pic">
+
+                    <img src="../works/phase_feedback_spd01/phase_feedback_spd01_00_00.gif" alt="phase_feedback_spd01_00_00"/>
+
+                </div>
+
+               
+
+                
+
+                
+
+            </div>
+            <div id="footer">
+                
+                <p>Copyright © 2022- omotopopo</p>
+
+            </div>
+        </div>
+
+    </body>
+</html>

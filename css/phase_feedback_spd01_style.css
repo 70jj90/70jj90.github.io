@@ -1,0 +1,88 @@
+html {
+    image-rendering: pixelated;
+}
+
+body {
+    background-color: #faebd7;
+}
+
+h1 {
+    margin: 7px;
+    color: #000000;
+    text-shadow: 2px 2px 8px #000000;    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 
+  code {
+    display: block;
+    white-space: pre-wrap;
+  }
+
+  
+#canvas {    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {  
+    text-align: center;  
+    padding: 7px;    
+}
+
+#navigation {
+    text-align: center;
+}
+
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#navigation li { 
+    display: inline;
+    margin: 10px;
+
+}
+
+#navigation a {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px #000000;
+    transition: 1s;
+    
+}
+
+#navigation a:hover {
+    color:#e26e2b;
+    text-shadow: 2px 2px 8px #e26e2b;
+    transition: 1s;
+}
+
+#works {
+    text-align: left;
+    padding-left: 17px;}
+
+#p_c_tarolo {
+    text-align: left;
+    display: block;
+    padding-left: 17px;
+    background-color: #ffffff;
+    width: 600px;
+    margin: 17px;
+    border: #000000;
+    border-style: dotted;
+}
+
+
+

@@ -1,0 +1,70 @@
+html {
+    image-rendering: pixelated;
+}
+
+body {
+    background-color: #faebd7;
+}
+
+h1 {
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px #000000;    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#canvas {    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    text-align: center;
+    padding: 7px;    
+}
+
+#navigation {
+    text-align: center;
+}
+
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#navigation li { 
+    display: inline;
+    margin: 10px;
+
+}
+
+#navigation a {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px #000000;
+    transition: 1s;
+    
+}
+
+#navigation a:hover {
+    color:#e26e2b;
+    text-shadow: 2px 2px 8px #e26e2b;
+    transition: 1s;
+}
+
+#works {
+    text-align: center;
+}
+
+
+
