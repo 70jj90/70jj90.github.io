@@ -1,16 +1,15 @@
+/* html - body */
 html {
     image-rendering: pixelated;
 }
 
-body {
-    background-color: antiquewhite;
-}
 
-h1 {
-    margin: 0px;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 8px #000000;
-    
+body {
+    background-color: #faebd7;
+    color: #000000;
+    background-image: url("../img/omotopopo_bg_img_cycle_2022_03.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -18,53 +17,103 @@ a {
     text-decoration: none;
 }
 
+
+/* Canvas */
 #canvas {
-    width: 900px;
-    margin-left: 17px;
-    margin-right: 17px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header {
-    padding: 7px;    
+    text-align: left;
+    padding: 7px;
 }
 
 #content {
     padding: 10px;
 }
 
-
-#navigation {
-    width: 180px;
-    float: left;
+/* Canvas - Navigation */
+#navigation li {
+    display: inline;
+    margin: 7px;
 }
 
-#navigation ul {
-    list-style-type: none;
-    padding: 0px;
+#navigation {
+    text-align: left;
+    padding: 7px;
 }
 
 #navigation a {
-    color: rgb(0, 0, 0);
+    list-style-type: none;
+    color: #000000;
     text-shadow: 2px 2px 8px #000000;
     transition: 1s;
-    
 }
 
 #navigation a:hover {
-    color: red;
-    text-shadow: 2px 2px 8px #FF0000;
+    color: #da6200;
+    text-shadow: 2px 2px 8px #da6200;
     transition: 1s;
 }
 
-
-#works {
-    width: 700px;
-    float: right;
+/* Artworks */
+#news {
+    width: 500px;
+    float: left
 }
 
+/* Sidebar - Update */
+#sidebar {
+    width: 504px;
+    float: right;
+    border-style: double;
+    border-color: #000000;
+    padding: 7px;
+}
+
+#update_00 {
+    border-style: dotted;
+    border-color: #000000;
+    padding: 7px;
+    margin: 5px;
+}
+
+#update_00 h4 {
+    color: #000000;
+    font-size: 14px;
+}
+
+#buttons {
+    border-style: double;
+    border-color: #000000;
+    padding: 7px;
+    margin: 5px;
+}
+
+/* Footer */
 #footer {
     clear: both;
-    position:absolute;
-    bottom:0;
+    padding: 7px;
 }
 
+/* Footer - Navigation */
+#navigation_footer li {
+    display: inline;
+    margin: 7px;
+}
+
+#navigation_footer {
+    text-align: left;
+}
+
+#navigation_footer a {
+    font-size: 11px;
+    list-style-type: none;
+    color: #000000;
+}
+
+#navigation_footer a:hover {
+    color: #000000;
+}
